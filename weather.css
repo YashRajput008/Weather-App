@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background: var(--raining);
+}
+
+:root {
+  --sunny: linear-gradient(45deg, orange, yellow);
+  --cloudy: linear-gradient(45deg, grey, rgb(100, 77, 100));
+  --snowy: linear-gradient(45deg, rgb(157, 216, 235), white);
+  --hot: linear-gradient(45deg, red, orange);
+  --raining: linear-gradient(45deg, rgb(41, 41, 87), black);
+
+  --text-color: white;
+}
+
+body {
+}
+
+.intro {
+  outline: auto;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.title {
+  color: var(--text-color);
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+}
