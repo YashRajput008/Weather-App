@@ -8,9 +8,47 @@
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
   </head>
   <body>
-    <section class="intro">
-      <div class="title">WEATHER</div>
-    </section>
+    <div class="search" data-current-city>
+      <input
+        type="text"
+        placeholder="Please Input City Name..."
+        class="search-input"
+      />
+      <button class="search-btn" id="search-btn">Search</button>
+    </div>
+    <header class="header">
+      <div class="header-left">
+        <div class="temp"><span data-current-temp>68</span>&deg;</div>
+        <div class="forecast" id="forecast" data-current-forecast>CLEAR</div>
+      </div>
+      <div class="header-right">
+        <img
+          src="assets/sunny.png"
+          alt="icon"
+          class="weather-icon"
+          id="icon"
+          width="100px"
+          height="100px"
+          data-current-icon
+        />
+      </div>
+    </header>
+
+    <main>
+      <section class="hourly-forecast" id="hourly-forecast">
+        <h2>Hourly Forecast</h2>
+        <div class="hourly-container">
+          <!-- Hourly data will be dynamically inserted here -->
+        </div>
+      </section>
+
+      <section class="daily-forecast" id="daily-forecast">
+        <h2>Daily Forecast</h2>
+        <div class="daily-container">
+          <!-- Daily data will be dynamically inserted here -->
+        </div>
+      </section>
+    </main>
 
     <script src="weather.js"></script>
   </body>

@@ -1,8 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Bebas+Neue&family=Stick+No+Bills&family=Amatic+SC:wght@700&family=DM+Mono:wght@300;400;500&display=swap");
+
+/* Fonts:
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Stick No Bills', sans-serif;
+font-family: 'Amatic SC', sans-serif;
+*/
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background: var(--raining);
 }
 
 :root {
@@ -16,17 +24,93 @@
 }
 
 body {
-}
-
-.intro {
-  outline: auto;
-  max-width: 1400px;
-  width: 100%;
-}
-
-.title {
+  font-family: "Barlow Condensed", sans-serif;
+  background: var(--raining);
   color: var(--text-color);
-  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.search {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3rem;
+  width: 100%;
+  max-width: 600px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.search-input {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  padding: 15px;
+  border: 2px solid transparent;
+  width: 80%;
+  border-radius: 3rem 0 0 3rem;
+  outline: none;
+  transition: border-color 0.3s, transform 0.3s;
+  margin: 0;
+}
+
+.search-input:hover,
+.search-input:focus {
+  border-color: firebrick;
+  transform: scale(1.05);
+}
+
+.search-btn {
+  font-family: "Barlow Condensed", sans-serif;
+  padding: 18px 20px;
+  background-color: firebrick;
+  font-size: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 3rem 3rem 0;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.search-btn:hover {
+  background-color: darkred;
+  transform: scale(1.05);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  max-width: 1200px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.header-left {
+  padding-left: 30px;
+}
+
+.header-right {
+  padding-right: 30px;
+}
+
+.temp {
+  font-size: 100px;
+  font-family: "Stick No Bills", sans-serif;
+  margin: 0;
+}
+
+.forecast {
+  font-size: 36px;
+  color: grey;
+  font-family: "Stick No Bills", sans-serif;
+  margin-top: 10px;
 }
