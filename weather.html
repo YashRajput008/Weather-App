@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
   </head>
   <body>
-    <div class="search" data-current-city>
+    <div class="search">
       <input
         type="text"
         placeholder="Please Input City Name..."
@@ -18,8 +18,8 @@
     </div>
     <header class="header">
       <div class="header-left">
-        <div class="temp"><span data-current-temp>68</span>&deg;</div>
-        <div class="forecast" id="forecast" data-current-forecast>CLEAR</div>
+        <div class="temp"><span>68</span>&deg;</div>
+        <div class="forecast" id="forecast">CLEAR</div>
       </div>
       <div class="header-right">
         <img
@@ -29,7 +29,6 @@
           id="icon"
           width="100px"
           height="100px"
-          data-current-icon
         />
       </div>
     </header>
@@ -50,6 +49,6 @@
       </section>
     </main>
 
-    <script src="weather.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>

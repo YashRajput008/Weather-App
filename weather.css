@@ -57,6 +57,7 @@ body {
   outline: none;
   transition: border-color 0.3s, transform 0.3s;
   margin: 0;
+  font-weight: bolder;
 }
 
 .search-input:hover,
@@ -75,6 +76,7 @@ body {
   cursor: pointer;
   border-radius: 0 3rem 3rem 0;
   transition: background-color 0.3s, transform 0.3s;
+  font-weight: 900;
 }
 
 .search-btn:hover {
